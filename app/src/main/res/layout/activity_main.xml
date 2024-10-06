@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="303dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Cricketers"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="53dp" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="366dp"
+        android:layout_marginLeft="25dp">
+
+
+        <ImageView
+            android:id="@+id/pic0"
+            android:layout_width="378dp"
+            android:layout_height="338dp"
+            android:layout_marginLeft="30dp"
+            app:srcCompat="@drawable/pic0"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="14dp" />
+
+        <ImageView
+            android:id="@+id/pic1"
+            android:layout_width="365dp"
+            android:layout_height="363dp"
+            android:layout_marginLeft="30dp"
+            android:alpha="0"
+            app:srcCompat="@drawable/pic1"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="13dp" />
+
+        <ImageView
+            android:id="@+id/pic2"
+            android:layout_width="374dp"
+            android:layout_height="381dp"
+            android:alpha="0"
+            app:srcCompat="@drawable/pic2"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="-6dp" />
+
+        <ImageView
+            android:id="@+id/pic3"
+            android:layout_width="400dp"
+            android:layout_height="340dp"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/pic0"
+            app:srcCompat="@drawable/pic3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="526dp">
+
+
+        <ImageButton
+            android:id="@+id/imgprev"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            app:srcCompat="@android:drawable/ic_media_rew" />
+
+        <ImageButton
+            android:id="@+id/imgnext"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            app:srcCompat="@android:drawable/ic_media_ff" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="269dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@color/material_dynamic_primary80"
+        android:gravity="center"
+        android:text="MS Dhoni"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="602dp" />
+
+
+</LinearLayout>
