@@ -11,7 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     lateinit var image:ImageView
-    var names= arrayOf("MS Dhoni","Virat Kohli","Rohit Sharma","Gautam Gambhir")
+    var names= arrayOf("MS Dhoni","Virat Kohli","Rohit Sharma","Rahul Dravid")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
